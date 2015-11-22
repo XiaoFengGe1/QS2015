@@ -1,30 +1,16 @@
 package lxf.qs.com;
 import java.awt.BorderLayout;
-import java.awt.Component;
-import java.awt.GridLayout;
 import java.awt.HeadlessException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 import java.io.IOException;
 import java.util.Calendar;
 import java.util.HashMap;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.JTextArea;
-import javax.swing.table.TableCellRenderer;
-import javax.swing.table.TableColumn;
-import javax.swing.table.TableColumnModel;
-
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
-
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-
 public class qs {
 	
 	public static void main(String[] args) {
@@ -125,12 +111,10 @@ class Domain{
 					}
 				
 				Calendar calendar = Calendar.getInstance();
-				String str = "";
 				String classify = myGUI.myChoice.getSelectedItem().toString();
 				String answer = myGUI.textAnswer.getText().toString();
-				String jsonContentPut = "";
 				int year = calendar.get(Calendar.YEAR);
-				int month = calendar.get(calendar.MONTH);
+				int month = calendar.get(calendar.MONTH)+1;
 				int day = calendar.get(calendar.DATE);
 				JSONArray jsonArray = new JSONArray();
 				JSONObject json = new JSONObject();
