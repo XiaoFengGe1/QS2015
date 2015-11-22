@@ -20,6 +20,7 @@ public class GUITool {
 	JButton butSearch=null;
 	JButton butClear=null;
 	JButton butShowAll=null;
+	JButton butSend=null;
 	JTextField textWord=null;
 	TextArea textTitle=null;
 	TextArea textAnswer=null;
@@ -46,6 +47,7 @@ public class GUITool {
 		butSearch = new JButton("搜索");
 		butClear = new JButton("清空");
 		butShowAll = new JButton("搜索(换行)");
+		butSend = new JButton("上传");
 		textWord = new JTextField("",42);
 		textTitle = new TextArea("",20,20,TextArea.SCROLLBARS_VERTICAL_ONLY );
 		textAnswer = new TextArea("",20,100,TextArea.SCROLLBARS_VERTICAL_ONLY );
@@ -111,6 +113,7 @@ public class GUITool {
 		panel22.add(textWord);
 		panel22.add(butSearch);
 		panel22.add(butShowAll);
+		panel22.add(butSend);
 		panel21.add(panel22,BorderLayout.NORTH);
 		panel21.add(panel23,BorderLayout.CENTER);
 		

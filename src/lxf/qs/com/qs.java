@@ -16,6 +16,8 @@ public class qs {
 	public static void main(String[] args) {
 		Domain damain = new Domain();
 		damain.doThing();
+		//Email m = new Email();
+		//m.toAddressWithFile("1174254785@qq.com", "123", "123","D:\\tt.txt");
 	}
 }
 
@@ -27,8 +29,10 @@ class Domain{
 	 String myfileFloderQS="D:\\QS2015";
 	 String myfileFloder="D:\\QS2015\\data";
 	 String myfileAdr="D:\\QS2015\\data\\lixiaofeng.txt";
+	 int sendCon;
 	public Domain() {
 		super();
+		sendCon=0;
 		myFile = new FileTool();
 		myJson = new JsonTool();
 		myGUI= new GUITool();
@@ -67,6 +71,24 @@ class Domain{
 				myGUI.textTitle.setText("");
 				myGUI.textAnswer.append("");
 				myGUI.textAnswer.setText("");
+			}
+		});
+		
+		myGUI.butSend.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
+				if(sendCon==0){
+					JOptionPane.showMessageDialog(null,"确定上传请再次点击");
+					sendCon=1;
+				}else{
+					Calendar calendar = Calendar.getInstance();
+					int year = calendar.get(Calendar.YEAR);
+					int month = calendar.get(calendar.MONTH)+1;
+					int day = calendar.get(calendar.DATE);
+					String title = "QS2015"+year+"-"+(month+1)+"-"+day;
+					Email m = new Email();
+					m.toAddressWithFile("1174254785@qq.com",title,"保存",myfileAdr);
+					sendCon=0;
+				}
 			}
 		});
 		
