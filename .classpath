@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Sun JDK 1.6.0_13"/>
-	<classpathentry kind="lib" path="C:/program1/jar/josn/json-lib-2.2.3-jdk15.jar"/>
-	<classpathentry kind="lib" path="C:/program1/jar/josn/commons-beanutils-1.7.0.jar"/>
-	<classpathentry kind="lib" path="C:/program1/jar/josn/commons-collections-3.2.1.jar"/>
-	<classpathentry kind="lib" path="C:/program1/jar/josn/commons-httpclient-3.1.jar"/>
-	<classpathentry kind="lib" path="C:/program1/jar/josn/commons-lang-2.3.jar"/>
-	<classpathentry kind="lib" path="C:/program1/jar/josn/commons-logging-1.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/program1/jar/josn/ezmorph-1.0.3.jar"/>
-	<classpathentry kind="lib" path="C:/program1/jar/mail.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="C:/program1/jar/josn/json-lib-2.2.3-jdk15.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/program1/jar/josn/commons-beanutils-1.7.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/program1/jar/josn/commons-collections-3.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/program1/jar/josn/commons-httpclient-3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/program1/jar/josn/commons-lang-2.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/program1/jar/josn/commons-logging-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/program1/jar/josn/ezmorph-1.0.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/program1/jar/mail.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
