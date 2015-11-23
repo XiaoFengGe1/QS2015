@@ -104,7 +104,7 @@ class Domain{
 					JOptionPane.showMessageDialog(null,"ÒÑÌí¼Ó");
 					return;
 				}
-				if(!myFile.judgeFolder(myfileFloder)){   
+				if(myFile.getFileLength(myfileFloder)<3){   
 					
 				} else
 					try {

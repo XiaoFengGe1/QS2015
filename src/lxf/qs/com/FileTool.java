@@ -88,4 +88,10 @@ public class FileTool {
 		br.close();
 		return sb.toString();
 	}
+	
+	public int getFileLength(String address){
+		File f = new File(address);
+		Long l = f.length();
+		return Integer.parseInt(l.toString());
+	}
 }
